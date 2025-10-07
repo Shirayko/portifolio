@@ -117,7 +117,7 @@ body {
     font-weight: 400;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 2340px) {
     .cabecalho {
         padding: 10%;
     }
@@ -134,4 +134,5 @@ body {
     .apresentacao__conteudo {
         width: auto;
     }
+
 }
