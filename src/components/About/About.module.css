@@ -1,0 +1,142 @@
+.section {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  padding: 120px 2rem 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.number {
+  display: block;
+  font-family: var(--font-title);
+  font-size: 0.9rem;
+  letter-spacing: 0.4em;
+  color: var(--p4-yellow);
+  margin-bottom: 0.5rem;
+}
+.header h2 {
+  font-family: var(--font-title);
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  letter-spacing: 0.12em;
+  color: var(--p4-white);
+  line-height: 1;
+  text-shadow: 0 0 40px rgba(245, 230, 66, 0.06);
+}
+.sub {
+  font-size: 0.75rem;
+  letter-spacing: 0.35em;
+  color: var(--p4-text-dim);
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.card {
+  border: 1px solid var(--p4-gray);
+  padding: 1.5rem;
+  background: var(--p4-black-3);
+}
+
+.badge {
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  color: var(--p4-yellow);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.card p {
+  font-size: 0.9rem;
+  color: var(--p4-text);
+  margin-bottom: 0.75rem;
+  line-height: 1.8;
+}
+.highlight {
+  color: var(--p4-yellow);
+  font-weight: 700;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--p4-gray);
+}
+.stat { text-align: center; }
+.statNumber {
+  display: block;
+  font-family: var(--font-title);
+  font-size: 2.8rem;
+  color: var(--p4-yellow);
+  line-height: 1;
+}
+.statLabel {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: var(--p4-text-dim);
+  margin-top: 0.2rem;
+  font-weight: 600;
+}
+
+.timeline {
+  border: 1px solid var(--p4-gray);
+  background: var(--p4-black-3);
+}
+.timelineItem {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid var(--p4-gray);
+}
+.timelineItem:last-child {
+  border-bottom: none;
+}
+.timelineYear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 70px;
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  color: var(--p4-yellow);
+  background: var(--p4-black-2);
+  border-right: 1px solid var(--p4-gray);
+  letter-spacing: 0.05em;
+}
+.timelineBox {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.timelineRole {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--p4-white);
+}
+.timelineCompany {
+  font-size: 0.7rem;
+  color: var(--p4-text-dim);
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 768px) {
+  .content { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .section { padding: 80px 1rem 40px; }
+  .stats { gap: 1.5rem; }
+}

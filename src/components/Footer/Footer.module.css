@@ -1,0 +1,26 @@
+.footer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2.5rem 2rem 1.5rem;
+}
+.border {
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--p4-yellow), transparent);
+  opacity: 0.15;
+}
+.content p {
+  font-size: 0.75rem;
+  color: var(--p4-text-dim);
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.1em;
+}
+.quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.85rem !important;
+  color: var(--p4-yellow) !important;
+  opacity: 0.4;
+}
